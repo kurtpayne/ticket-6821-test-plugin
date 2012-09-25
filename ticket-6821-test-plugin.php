@@ -27,7 +27,6 @@ class Ticket_6821_Test_Plugin {
 	 * @return void
 	 */
 	public function hooks() {
-		add_action( 'plugins_loaded', array( $this, 'set_image_engines_order' ) );
 		if ( is_admin() ) {
 			add_action( 'admin_init', array( $this, 'upgrade' ) );
 			add_action( 'admin_menu', array( $this, 'settings_page' ) );
