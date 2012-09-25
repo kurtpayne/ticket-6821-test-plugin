@@ -184,7 +184,7 @@ class Ticket_6821_Test_Plugin {
 				$engines[] = 'imagick';
 			}
 			
-			update_option( 'ticket-6821-enabled-engines', $engines );
+			update_option( 'ticket-6821-engines', $engines );
 			update_option( 'ticket-6821-engines-order', array( 'imagick', 'gd' ) );
 			update_option( 'ticket-6821_version', '0.1' );
 		}
