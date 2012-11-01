@@ -125,9 +125,6 @@ class Ticket_6821_Test_Plugin {
 				jQuery( "#sortable" ).sortable( {
 					update: function(event, ui) {
 						jQuery("#ticket-6821-engines-order").val( jQuery(this).sortable( "toArray" ).join(",").replace( /ticket\-6821\-engine\-/g, "" ) );
-						console.log(
-							jQuery("#ticket-6821-engines-order").val()
-						);
 					}
 				});
 				jQuery( "#sortable" ).disableSelection();
